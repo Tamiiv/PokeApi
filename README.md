@@ -1,8 +1,6 @@
-# React + Vite
+# POKE API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Practicando React consumiendo la API de Pokemon
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Link del vídeo](https://youtu.be/iRTx5_kwyNA?si=ALFIaaEsSnCwVQBr)
+- [API](https://pokeapi.co/)
