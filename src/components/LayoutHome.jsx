@@ -11,8 +11,6 @@ export default function LayoutHome() {
   useEffect(() => {
     const api = async () => {
       const apiPoke = await axios.get(`${URL_POKEMON}`);
-      console.log('Array');
-      console.log(apiPoke.data.results);
       setArrayPokemon(apiPoke.data.results);
     };
 
@@ -23,10 +21,8 @@ export default function LayoutHome() {
     <div className={css.layout}>
       <Header />
 
-      <div>
+      <div className={css.card_content}>
         {arrayPokemon.map((card, index) => {
-          console.log('valor card');
-          console.log(card);
           return <Card key={index} props={card} />;
         })}
       </div>
