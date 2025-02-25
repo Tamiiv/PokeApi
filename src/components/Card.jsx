@@ -107,7 +107,7 @@ export default function Card({ props }) {
     <div className={css.card}>
       <img className={css.img_pokemon} src={itemPokemon?.sprites?.other['official-artwork'].front_default} alt="pokemon" />
       <div className={`bg-${especiePokemon?.data?.color?.name} ${css.sub_card}`}>
-        <strong className={css.id_card}> {pokeId} </strong>
+        <strong className={css.id_card}> #{pokeId} </strong>
         <strong className={css.name_card}> {itemPokemon.name} </strong>
         <h4 className={css.height_card}> Altura: {itemPokemon.height}0 cm</h4>
         <h4 className={css.weight_card}> Peso: {itemPokemon.weight} Kg</h4>
@@ -142,9 +142,9 @@ export default function Card({ props }) {
 
         <div className={css.div_evolution}>
             {
-              evolutionPokemon.map(evolution => {
+              evolutionPokemon.map((evolution, index) => {
                 return(
-                  <div className={css.item_evolution}>
+                  <div className={css.item_evolution} key={index}>
                     <img className={css.img} src={evolution.img} alt="Evolucion"/>
                     <h6>{evolution.name}</h6>
                   </div>
